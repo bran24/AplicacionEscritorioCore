@@ -6,7 +6,7 @@ namespace ORM
 {
     public class OrmContext: DbContext
     {
-
+        //prueba
         public DbSet<Usuario> usuarios { get; set; }
         public DbSet<Producto> productos { get; set; }
         public static string connection { get; set; } = @"Server=DESKTOP-2CBE3PB\SQLEXPRESS;Database=Bodega;User Id=sa;Password=sqlserver;";
