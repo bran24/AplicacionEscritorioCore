@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Recursos\App.config" />
+    <None Remove="Recursos\Fonts\FontAwesome6BrandsRegular400.otf" />
+    <None Remove="Recursos\Fonts\FontAwesome6FreeRegular400.otf" />
+    <None Remove="Recursos\Fonts\FontAwesome6FreeSolid900.otf" />
+    <None Remove="Recursos\Imagenes\LogoPrueba.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Recursos\App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Recursos\Fonts\FontAwesome6BrandsRegular400.otf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Recursos\Fonts\FontAwesome6FreeRegular400.otf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Recursos\Fonts\FontAwesome6FreeSolid900.otf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ORM\ORM.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Recursos\Imagenes\LogoPrueba.png" />
+  </ItemGroup>
+
+</Project>
